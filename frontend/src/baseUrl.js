@@ -1,3 +1,3 @@
 export const baseApiURL = () => {
-  return "http://localhost:5000/api";
+  return "https://school-managment-v1-git-master-userisaziz.vercel.app/api";
 };

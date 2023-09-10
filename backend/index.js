@@ -7,7 +7,7 @@ var cors = require("cors");
 
 app.use(
   cors({
-    origin: "https://school-managment-v1.vercel.app",
+    origin: "https://school-managment-v1-kxk1-userisaziz.vercel.app",
     methods: ["GET", "POST", "PUT", "DELETE"],
     credentials: true,
   })

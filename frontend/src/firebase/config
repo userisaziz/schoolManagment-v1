@@ -1,0 +1,18 @@
+// Import the getStorage function from the Firebase Storage SDK
+import { getStorage } from "firebase/storage";
+
+// Firebase configuration object
+const firebaseConfig = {
+  apiKey: "AIzaSyAE6m6-zqCWFGX4IXey8a-qU2ec-6plozw",
+  authDomain: "schoolmanagement-4ea7f.firebaseapp.com",
+  projectId: "schoolmanagement-4ea7f",
+  storageBucket: "schoolmanagement-4ea7f.appspot.com",
+  messagingSenderId: "94282698032",
+  appId: "1:94282698032:web:f98f71709058a4d0c84cf5",
+  measurementId: "G-8MM2PM7PYJ", // This is optional
+};
+
+// Initialize Firebase Storage
+export const storage = getStorage();
+
+// Export the 'storage' object to use it in your application

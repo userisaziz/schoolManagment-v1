@@ -5,7 +5,13 @@ connectToMongo();
 const port = 5000 || process.env.PORT;
 var cors = require("cors");
 
-app.use(cors());
+app.use(
+  cors({
+    origin: "https://school-managment-v1-git-master-userisaziz.vercel.app",
+    methods: ["GET", "POST", "PUT", "DELETE"],
+    credentials: true,
+  })
+);
 app.use(express.json()); //to convert request data to json
 
 // Credential Apis

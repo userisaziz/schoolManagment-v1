@@ -6,7 +6,6 @@
   "scripts": {
     "start": "node index.js",
     "dev": "nodemon index.js",
-    "build": "webpack --config webpack.config.js"
   },
   "author": "",
   "license": "ISC",

@@ -1,3 +1,3 @@
 export const baseApiURL = () => {
-  return "https://school-managment-v1.vercel.app/api";
+  return "https://school-backend-7nei.onrender.com/api";
 };

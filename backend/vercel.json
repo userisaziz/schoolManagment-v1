@@ -2,5 +2,19 @@
   "version": 2,
   "name": "school-management",
   "builds": [{ "src": "./index.js", "use": "@vercel/node" }],
-  "routes": [{ "src": "/(.*)", "dest": "./routes/" }]
+  "routes": [
+    { "src": "/api/student/auth/(.*)", "dest": "/routes/Student Api/studentCredential/$1" },
+    { "src": "/api/faculty/auth/(.*)", "dest": "/routes/Faculty Api/facultyCredential/$1" },
+    { "src": "/api/admin/auth/(.*)", "dest": "/routes/Admin Api/adminCredential/$1" },
+    { "src": "/api/student/details/(.*)", "dest": "/routes/Student Api/studentDetails/$1" },
+    { "src": "/api/faculty/details/(.*)", "dest": "/routes/Faculty Api/facultyDetails/$1" },
+    { "src": "/api/admin/details/(.*)", "dest": "/routes/Admin Api/adminDetails/$1" },
+    { "src": "/api/timetable/(.*)", "dest": "/routes/timetable/$1" },
+    { "src": "/api/material/(.*)", "dest": "/routes/material/$1" },
+    { "src": "/api/notice/(.*)", "dest": "/routes/notice/$1" },
+    { "src": "/api/subject/(.*)", "dest": "/routes/subject/$1" },
+    { "src": "/api/marks/(.*)", "dest": "/routes/marks/$1" },
+    { "src": "/api/branch/(.*)", "dest": "/routes/branch/$1" },
+    { "src": "/(.*)", "dest": "/index.js" }
+  ]
 }

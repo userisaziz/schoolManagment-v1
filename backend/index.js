@@ -6,11 +6,7 @@ const port = 5000 || process.env.PORT;
 var cors = require("cors");
 
 app.use(
-  cors({
-    origin: "https://school-managment-v1-kxk1-userisaziz.vercel.app",
-    methods: ["GET", "POST", "PUT", "DELETE"],
-    credentials: true,
-  })
+  cors()
 );
 app.use(express.json()); //to convert request data to json
 
